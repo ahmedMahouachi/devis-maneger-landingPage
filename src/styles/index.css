@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.our-projects .card {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+/* Optional: Add more styling for the layout */
+.our-projects .project-card {
+  border-radius: 8px;
+  padding: 10px;
+}
+html {
+  scroll-behavior: smooth;
+}
